@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "next dev",
-    "build": "next build"
+    "build": "next build",
+    "prebuild": "node scripts/audit-route-auth.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.39.0",
